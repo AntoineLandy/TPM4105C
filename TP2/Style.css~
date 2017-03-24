@@ -1,0 +1,41 @@
+body{
+	
+}
+
+header{
+	border-bottom: 1px solid grey;
+	height: 65px;
+}
+
+.logo{
+	width: 10%;
+}
+
+nav{
+	float: right;
+}
+
+header ul{
+	float: right;
+	margin-top: 0%;
+	list-style-type: none;
+}
+
+header ul li{
+	float: left;
+	padding-right: 1%;
+	padding-left: 1%;
+	border-right: 1px solid black;
+	text-align: center;
+	line-height: 65px;
+}
+
+header ul li:hover{
+	cursor: pointer;
+	background-color: orange;
+}
+
+header ul input{
+	float: left;
+	width: 25%;
+}
