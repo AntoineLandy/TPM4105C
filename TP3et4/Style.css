@@ -1,0 +1,414 @@
+body{
+	background-color: lightgrey;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+header{
+	border-bottom: 1px solid black;
+	width: 100%;
+	float: left;
+    background-color: rgba(40,50,90,0.6);
+    padding-top: -2%;
+}
+
+header .burgericon{
+    display: none;
+}
+
+header .logo{
+	float: left;
+	margin-top: -2%;
+	padding: 1%;
+}
+
+header .phoneicon{
+    display: none;
+}
+
+header ul{
+	float: right;
+	margin-top: 2%;
+	margin-right: 2%;
+    list-style-type: none;
+    width: 25%;
+    color: white;
+}
+
+header p{
+	float: right;
+	margin-right: 5%;
+    color: white;
+}
+
+header ul li{
+    float: left;
+    margin-left: 2%;
+    color: white;
+}
+
+header ul li:hover{
+    transition: all 0.25s ease-in;
+	transform: scale(1.25);
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+	margin-bottom: 1%;
+}
+
+h1{
+	text-align: center;
+}
+
+#main{
+	background-color: lightgrey;
+	float: left;
+}
+
+#main img{
+    width: 45%;
+    margin-top: 2%;
+    margin-left: 28%;
+}
+
+#main p{
+	padding: 2%;
+}
+
+.img{
+	display: block;
+	float: left;
+	width: 100%;
+    background-color: rgba(40,50,90,0.6);
+	border-radius: 2%;
+}
+
+.img ul{
+    margin-left: 15%;
+}
+
+.img ul li{
+    display: inline-block;
+	text-align: center;
+    margin-left: 2%;
+}
+
+.img ul li img{
+	width: 200px;
+	height: 200px;
+	margin-top: 7%;
+	margin-left: 5%;
+	margin-bottom: 5%;
+}
+
+.img1:hover{
+	float: left;
+    transition: all 0.25s ease-in;
+	transform: scale(1.25);
+}
+
+/*Annimation image*/
+ 
+.voile{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    opacity: 0.7;
+    background-color: black;
+ }
+ 
+.lightbox{
+    position: fixed;
+    display: none;
+    width: 50%;
+    height: 75%;
+    left: 35%;
+    top: 25%;
+    padding: 30px;
+    background-color: rgba(0,0,0,0);;
+}
+ 
+.lightbox a{
+    position: absolute;
+    color: white;
+    font-size: 80px;
+    font-family:  Arial Black;
+    width: 75%;
+    height: 5%;
+    top: 5%;
+    left: 25%;
+ }
+ 
+.fleche1{
+     left: 70px;
+ }
+
+.fleche1: hover{
+    cursor: ponter;
+}
+
+.fleche2{
+     right: -94px;
+ }
+
+.fleche2: hover{
+    cursor: ponter;
+}
+
+/*.img img{
+	float: left;
+	margin-left: 5%;
+	width: 150px;
+	height: 150px;
+}*/
+
+#contact{
+    float: left;
+    margin-top: 5%;
+	margin-bottom: 1%;
+}
+
+.map{
+	float: left;
+	margin-top: 5%;
+	width: 55%;
+	padding-bottom: 5%;
+    border-right: 2px solid black;
+    font-size: 1.25em;
+}
+
+.form{
+	float: right;
+    font-size: 1.25em;
+	margin-top: 5%;
+	margin-right: 5%;
+}
+
+.form input{
+    margin-bottom: 5%;
+}
+
+.form button{
+    float: right;
+    margin-top: 5%;
+    margin-right: 15%;
+    width: 20%;
+    height: 20%;
+    background-color: red;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+#footer{
+	display: block;
+	float: left;
+    margin-top: 5%;
+    border-top: 1px solid black;
+	border-radius: 5px;
+	background-color: rgba(40,50,90,0.6);
+	color: white;
+	text-decoration: bold;
+	padding: 2%;
+	width: 90%;
+	padding-top: -20%;
+}
+
+
+
+
+/*Uniquement Contacts*/
+
+#mainC img{
+    width: 45%;
+    margin-top: 2%;
+    margin-left: 28%;
+}
+
+#listecontacts ul li{
+	list-style-type: none;
+}
+
+
+/*******Media Queries********/
+
+	/**telephone**/
+@media screen and (min-width: 200px) and (max-width: 580px){
+
+	header .logo{
+		width: 20%;
+        float: left;
+        padding: 2%;
+        margin-left: 20%;
+	}
+    
+    header .burgericon{
+        display: block;
+        float: left;
+        width: 30px;
+        padding: 2%;
+    }
+    
+    header .burgericon:hover{
+       transition: all 0.1s ease-in;
+	   transform: scale(1.25); 
+    }
+    
+    header .phoneicon{
+        display: block;
+        float: right;
+        width: 30px;
+        padding: 2%;
+    }
+    
+    header .phoneicon:hover{
+       transition: all 0.1s ease-in;
+	   transform: scale(1.25); 
+    }
+
+	header ul{
+		display: none;
+	}
+
+	.img{
+		background-color: lightgrey;
+		margin-left: -50%;
+	}
+
+	.img ul li{
+		display: block;
+		margin-bottom: 5%;
+	}
+
+	#main img{
+		width: 100%;
+		margin-left: 0%;
+	}
+    
+    #contact{
+        margin-right: -10%;
+    }
+	
+	.map{
+		padding-bottom: 5%;
+		border: none;
+		width: 60%;
+	}
+
+	.map p{
+		width: 150%;
+	}
+
+	.map iframe{
+		width: 150%;
+	}
+	
+	.form{
+		float: left;
+		margin-top:5%;
+		margin-left: 2%;
+		margin-bottom: 5%;
+		background-color: rgba(40,50,90,0.6);
+		font-size: 1em;
+		padding: 2%;
+		padding-bottom: 5%;
+	}
+
+	.form input{
+		width: 30%;
+	}
+    
+    .form button{
+		width: 40%;
+        height: auto;
+	}
+
+	.form textarea{
+		width: 30%;
+    }
+
+	#footer{
+		float: left;
+        width: 100%;
+        margin-top: 0%;
+	}
+
+}
+
+	/**tablette**/
+@media screen and (min-width: 460px) and (max-width: 1280px){
+	
+	header .logo{
+		width: 20%;
+		margin-left: 40%;
+	}
+
+	header ul{
+		display: inline-block;
+		text-align: center;
+		float: left;
+		margin-top: 5%;
+		margin-left: 5%;
+		width: 80%;
+	}
+
+	header ul li{
+		display: inline-block;
+		float: left;
+		text-align: center;
+	}
+
+	#main img{
+		margin-top: 0%;
+		margin-left: 0%;
+		width: 100%;
+	}
+
+	.img ul{
+		margin-right: 20%;
+	}
+
+	.map{
+        float: left;
+		width: 45%;
+		float: left;
+		padding-right: 2%;
+		padding-bottom: 10%;
+		font-size: 1em;
+	}
+
+	.map iframe{
+		width: 90%;
+		height: 80%;
+	}
+
+	.form{
+		float: right;
+		font-size: 1em;
+		width: 45%;
+	}
+
+	.form input{
+		margin-bottom: 2%;
+		margin-right: 10%;
+	}
+
+	.form button{
+		width: 40%;
+	}
+
+	#contact{
+		padding-bottom: 0%;
+		float: left;
+	}
+
+	#footer{
+		margin-top: 5%;
+		padding-top: -50%;
+	}
+}
