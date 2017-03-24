@@ -1,0 +1,79 @@
+body{
+	background-image: url("img/bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+h1{
+	font-size: 1 rem;
+	color: red;
+}
+
+.logoiut{
+	margin-left: 35%;
+	margin-top: 2%;
+	width: 25%;
+}
+
+.p1{
+	background-color: blue;
+	opacity: 0.5;
+}
+
+.p2{
+	background-color: white;
+	opacity: 0.5;
+}
+
+.p3{
+	background-color: red;
+	opacity: 0.5;
+}
+
+.MairieCalais{
+	max-width: 100%;
+	height: auto;
+}
+
+.form{
+	margin-top: 5%;
+	margin-left: 25%;
+	margin-right: 25%;
+	padding: 2%;
+	padding-left: 5%;
+	border: solid grey 1px;
+	border-radius: 10px;
+	
+}
+
+.form button{
+	margin-left: 25%;
+}
+
+table{
+	border: 5px groove grey;
+	width: 100%;
+}
+
+td{
+	border: 2px solid grey;
+
+}
+
+@media screen and (min-width: 200px) and (max-width: 640px){
+	.p1{
+		background-color: green;
+	}
+	
+	.form{
+		margin-left: 8%;
+		margin-right: 8%;
+		padding: 2%;
+	}
+	
+	td{
+		display: block;
+		border: 0px;
+		text-align: center;
+	}
+}
